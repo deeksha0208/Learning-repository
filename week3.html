@@ -1,0 +1,282 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 - Git and GitHub Basics</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6fb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ddd;
+        }
+
+        h2 {
+            color: #5b42a6;
+            border-bottom: 2px solid #e4def8;
+            padding-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: #f0edff;
+            padding: 12px;
+            border-left: 4px solid #6c4bc1;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #5b42a6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f5fc;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 4px 7px;
+            border-radius: 4px;
+            color: #b42352;
+        }
+
+        footer {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 12px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Week 1: Git and GitHub Fundamentals</h1>
+        <p>Understanding Version Control and Project Management</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. Understanding Version Control</h2>
+            <p>
+                Version control is a method of recording changes made to
+                files over time. It allows developers to review previous
+                versions, correct mistakes, and work on software projects
+                in an organized manner.
+            </p>
+            <div class="highlight">
+                Git is a popular version control tool that helps developers
+                maintain a complete history of their project changes.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Exploring GitHub</h2>
+            <p>
+                GitHub is a web-based service that stores Git repositories
+                online. It allows users to publish their projects, share
+                source code, review contributions, and work together
+                with other developers.
+            </p>
+            <p>
+                For example, a student can upload a college project to
+                GitHub and share its repository link with a teacher or
+                interviewer.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Important Git Terminology</h2>
+            <ul>
+                <li><strong>Repository:</strong> A project folder that
+                    contains files and their version history.</li>
+                <li><strong>Commit:</strong> A recorded set of changes
+                    saved in the repository.</li>
+                <li><strong>Branch:</strong> A separate line of development
+                    used to work on features independently.</li>
+                <li><strong>Merge:</strong> The process of combining
+                    changes from different branches.</li>
+                <li><strong>Working Directory:</strong> The files and
+                    folders where changes are made.</li>
+                <li><strong>Staging Area:</strong> The place where selected
+                    changes are prepared for a commit.</li>
+                <li><strong>Remote Repository:</strong> A repository stored
+                    on an online server, such as GitHub.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Git vs GitHub</h2>
+            <table>
+                <tr>
+                    <th>Git</th>
+                    <th>GitHub</th>
+                </tr>
+                <tr>
+                    <td>A version control system.</td>
+                    <td>An online repository hosting platform.</td>
+                </tr>
+                <tr>
+                    <td>Tracks changes made to project files.</td>
+                    <td>Stores and shares repositories online.</td>
+                </tr>
+                <tr>
+                    <td>Can work locally on a computer.</td>
+                    <td>Supports collaboration through the internet.</td>
+                </tr>
+                <tr>
+                    <td>Provides commands for managing versions.</td>
+                    <td>Provides tools for code reviews and teamwork.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>5. Useful Git Commands</h2>
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td><code>git init</code></td>
+                    <td>Creates a new local Git repository.</td>
+                </tr>
+                <tr>
+                    <td><code>git status</code></td>
+                    <td>Shows modified, staged, and untracked files.</td>
+                </tr>
+                <tr>
+                    <td><code>git add .</code></td>
+                    <td>Stages changes in the current directory.</td>
+                </tr>
+                <tr>
+                    <td><code>git commit -m "message"</code></td>
+                    <td>Records staged changes with a message.</td>
+                </tr>
+                <tr>
+                    <td><code>git log</code></td>
+                    <td>Displays previous commits.</td>
+                </tr>
+                <tr>
+                    <td><code>git clone URL</code></td>
+                    <td>Downloads a copy of a remote repository.</td>
+                </tr>
+                <tr>
+                    <td><code>git push</code></td>
+                    <td>Sends local commits to a remote repository.</td>
+                </tr>
+                <tr>
+                    <td><code>git pull</code></td>
+                    <td>Downloads and integrates remote changes.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>6. Steps in a Typical Git Workflow</h2>
+            <ol>
+                <li>Create a project or modify existing files.</li>
+                <li>Initialize Git if the folder is not already a repository.</li>
+                <li>Check file changes using <code>git status</code>.</li>
+                <li>Select changes with <code>git add .</code>.</li>
+                <li>Save a version using <code>git commit</code>.</li>
+                <li>Connect to a remote repository if necessary.</li>
+                <li>Upload the saved commits using <code>git push</code>.</li>
+            </ol>
+
+            <div class="highlight">
+                Example:
+                <p><code>git add .</code></p>
+                <p><code>git commit -m "Initial project version"</code></p>
+                <p><code>git push</code></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>7. Learning Outcomes</h2>
+            <p>
+                During this week, I understood how version control helps
+                manage software development projects. I learned the
+                differences between Git and GitHub, explored important
+                repository concepts, and studied the commands used to
+                record and upload project changes.
+            </p>
+            <p>
+                These fundamentals will help me maintain my academic
+                projects, track my coding progress, and collaborate
+                effectively with other developers.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Week 1 Learning Notes | Git and GitHub</p>
+    </footer>
+
+</body>
+</html>
+```
